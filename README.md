@@ -22,7 +22,7 @@ Before you begin, ensure you have the following installed on your local machine:
 ### 1. Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/localstack-tf.git
+git clone https://github.com/swiphf/localstack-tf.git
 cd localstack-tf
 ```
 
