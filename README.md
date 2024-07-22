@@ -29,6 +29,7 @@ cd localstack-tf
 ### 2. Run the containers
 
 ```sh
+docker network create localstack-network 
 docker-compose pull
 docker-compose up -d
 ```
@@ -58,4 +59,21 @@ The request should contain the following json body:
 ### 5. Validate the target S3
 Now, (after a minimum of 10 seconds) you should check the S3 bucket to see if there is a new file corresponding your "timestream" field in the json.
 
+Success example:
 ![Screenshot](images/s3-output.png)
+
+---
+
+## Commands that you might want to use:
+Empty an s3 bucket:
+```
+aws --endpoint-url=http://localhost:4566 s3 rm s3://my-bucket --recursive
+```
+Purge sqs queue:
+```
+aws --endpoint-url=http://localhost:4566 sqs purge-queue --queue-url http://localhost:4566/000000000000/my-queue
+```
+List an s3 bucket:
+```
+aws --endpoint-url=http://localhost:4566 s3 ls s3://my-bucket
+```
