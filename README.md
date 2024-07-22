@@ -36,6 +36,7 @@ docker-compose up -d
 ### 3. Create the S3 and SQS
 
 ```
+tflocal init
 tflocal apply
 ```
 
