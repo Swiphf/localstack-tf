@@ -1,4 +1,4 @@
-# localstack-tf
+# Localstack-TF
 
 This repo's purpose is to store the Terraform infrastructure used in the assignment.
 This repo will also contain the docker-compose.yaml file used to set up the three containers: the localstack, the publisher and the puller.
