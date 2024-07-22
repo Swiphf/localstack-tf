@@ -56,5 +56,6 @@ The request should contain the following json body:
 ```
 
 ### 5. Validate the target S3
-Now you should check the S3 bucket to see if theres a new file corresponding your "timestream" field in the json.
+Now, (after a minimum of 10 seconds) you should check the S3 bucket to see if there is a new file corresponding your "timestream" field in the json.
 
+![Screenshot](images/s3-output.png)
